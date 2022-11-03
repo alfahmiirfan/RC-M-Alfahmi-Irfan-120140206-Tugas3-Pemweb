@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 3 PemWeb</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        html {
+            margin: 0;
+        }
+        
+        body {
+            max-width: 50%;
+            margin: 30px auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        #tugas3 {
+            margin: auto;
+            color: white;
+            border-radius: 5px;
+            background-color: #222831;
+            text-align: center;
+        }
+        
+        #series {
+            background-color: #EEEEEE;
+            border-radius: 5px;
+        }
+        
+        #ram {
+            background-color: #EEEEEE;
+            border-radius: 5px;
+        }
+        
+        #ram ul li {
+            list-style: none;
+        }
+        
+        #newfeatures p {
+            border: solid #a49999;
+            border-radius: 5px;
+        }
+        
+        #newfeatures ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="tugas3">Iphone New Release</h1>
+    <div id="container">
+        <section id="series">
+            <p class="p1">Iphone 14 Pro Max</p>
+            <p class="p2">Iphone 14 Pro</p>
+            <p class="p3">Iphone 14 Plus</p>
+            <p class="p4">Iphone 14</p>
+        </section>
+        <section id="ram">
+            <p>Varian RAM</p>
+            <ul>
+                <li>1 TB</li>
+                <li>512 GB</li>
+                <li>256 GB</li>
+                <li>128 GB</li>
+            </ul>
+        </section>
+        <section id="newfeatures">
+            <p class="p5">Fitur Terbaru</p>
+            <ul>
+                <li>Dynamic Island</li>
+                <li>Kamera 48MP</li>
+                <li>Crash Detection</li>
+                <li>Konektivitas Satelit</li>
+            </ul>
+        </section>
+    </div>
+    <h2>Ingin tahu lebih lanjut ?</h2>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Masukkan Series Iphone <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Rating Iphone 14</h2>
+
+    <p>Silahkan masukkan angka 1-10:</p>
+
+    <input id="numb">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
